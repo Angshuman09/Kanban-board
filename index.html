@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskDone</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="column" id="task">
+        <h1>Task</h1>
+        <div class="tasks" id="task-task"></div>
+        <div class="add">
+            <input type="text" placeholder="write task" id="task-input">
+            <button onclick="AddTask('task')">Add Task</button>
+        </div>
+    </div>
+    <div class="column">
+        <h1>Doing</h1>
+        <div class="tasks" id="doing-task"></div>
+        <div class="add">  
+            <input type="text" placeholder="write task" id="doing-input">
+            <button onclick="AddTask('doing')">Add Task</button>
+        </div>
+    </div>
+    <div class="column">
+        <h1>Done</h1>
+        <div class="tasks" id="done-task"></div>
+        <div class="add">  
+            <input type="text" placeholder="write task" id="done-input">
+            <button onclick="AddTask('done')">Add Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
