@@ -15,10 +15,10 @@ html, body {
 body{
     background-color: #f7e882;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
     padding: 2rem;
 }
 
@@ -87,4 +87,18 @@ body{
 .card:hover{
     background-color: rgb(253, 253, 204);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.context-menu{
+    background-color: #efefef;
+    padding: 1vh 2vw; 
+    border-radius: 10px;
+    border: 1px solid black;
+    display: none;
+}
+
+.context-menu ul li{
+    list-style: none;
+    padding: 1vh 0;
+    cursor: pointer;
 }
