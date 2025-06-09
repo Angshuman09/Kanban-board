@@ -7,31 +7,32 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
+    <div class="board">
     <div class="column" id="task">
-        <h1>Task</h1>
+        <h1>Task (<span id="task-count">0</span>)</h1>
         <div class="tasks" id="task-task"></div>
         <div class="add">
             <input type="text" placeholder="write task" id="task-input">
             <button onclick="AddTask('task')">Add Task</button>
         </div>
     </div>
-    <div class="column">
-        <h1>Doing</h1>
+    <div class="column" id="doing">
+        <h1>Doing (<span id="doing-count">0</span>)</h1>
         <div class="tasks" id="doing-task"></div>
         <div class="add">  
             <input type="text" placeholder="write task" id="doing-input">
             <button onclick="AddTask('doing')">Add Task</button>
         </div>
     </div>
-    <div class="column">
-        <h1>Done</h1>
+    <div class="column" id="done">
+        <h1>Done (<span id="done-count">0</span>)</h1>
         <div class="tasks" id="done-task"></div>
         <div class="add">  
             <input type="text" placeholder="write task" id="done-input">
             <button onclick="AddTask('done')">Add Task</button>
         </div>
     </div>
-
+    </div>
     <div class="context-menu">
         <ul>
             <li onclick="editTask()">Edit</li>

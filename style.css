@@ -14,12 +14,16 @@ html, body {
 
 body{
     background-color: #f7e882;
+    padding: 1rem;
+}
+
+.board{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1.5rem;
 }
 
 .column{
@@ -53,7 +57,7 @@ body{
 .add button{
     padding: 0.5rem;
     border: none;
-    background-color: lightcyan;
+    background-color: lightyellow;
     font-weight: 600;
     border-radius: 5px;
     transition: background-color 0.5s ease;
@@ -62,8 +66,8 @@ body{
 }
 
 .add button:hover{
-    background-color: rgb(148, 244, 244);
-    border: 1px solid blue;
+    background-color: rgb(255, 255, 180);
+    border: 1px solid rgb(184, 184, 0);
 }
 
 .tasks{
@@ -75,13 +79,14 @@ body{
     width: 100%;
     min-height: 40px;
     background-color: lightyellow;
-    padding: 5px;
+    padding: 10px;
     margin:5px 0px;
     border-radius: 7px;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     transition: all 0.3s ease;
     cursor: grab;
+    position: relative;
 }
 
 .card:hover{
@@ -91,14 +96,31 @@ body{
 
 .context-menu{
     background-color: #efefef;
-    padding: 1vh 2vw; 
-    border-radius: 10px;
+    position: absolute;
+    border-radius: 0px 10px 10px 10px;
     border: 1px solid black;
     display: none;
+    width: 100px;
 }
 
 .context-menu ul li{
     list-style: none;
-    padding: 1vh 0;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
     cursor: pointer;
+}
+
+.context-menu ul li:hover{
+    background-color: #c0c0c0;
+}
+
+
+.time{
+    font-weight: 300;
+    color: rgb(103, 103, 103);
+    width: 100%;
+    display:flex;
+    justify-content: end;
+    font-style: italic;
 }
